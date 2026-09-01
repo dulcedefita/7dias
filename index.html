@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="7 días conmigo: una semana para empezar a cuidarte con pasos simples y acompañamiento personal.">
+  <title>7 días conmigo — Julia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#292524;--muted:#6f6966;--rose:#d88f9f;--rose-dark:#b9677b;--rose-soft:#f8e9ed;--cream:#fffaf7;--line:#eadfda;--white:#fff;--shadow:0 18px 50px rgba(80,48,50,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Manrope,Arial,sans-serif;font-size:16px;line-height:1.65}a{color:inherit}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}.serif{font-family:"Cormorant Garamond",serif}.eyebrow{margin:0 0 18px;color:var(--rose-dark);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.btn{display:inline-flex;min-height:54px;align-items:center;justify-content:center;padding:0 30px;border-radius:999px;background:var(--rose-dark);color:#fff;text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.04em;box-shadow:0 10px 24px rgba(185,103,123,.22);transition:.2s}.btn:hover{background:#a8566b;transform:translateY(-1px)}
+    header{position:absolute;z-index:2;top:0;left:0;width:100%;padding:24px 0}.brand{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:600}.hero{min-height:690px;display:grid;align-items:center;background:linear-gradient(105deg,#fff 0%,#fff 52%,var(--rose-soft) 52%,var(--cream) 100%);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:72px;align-items:center;padding:118px 0 80px}.hero-copy{max-width:590px}.hero h1{margin:0 0 22px;font-size:clamp(46px,6vw,76px);font-weight:500;line-height:.96;letter-spacing:-.025em}.hero h1 span{display:block;color:var(--rose-dark)}.lead{max-width:560px;margin:0 0 32px;color:#514c4a;font-size:18px;line-height:1.7}.hero-photo{position:relative;height:500px;border-radius:220px 220px 28px 28px;background:linear-gradient(145deg,#f7dce3,#f5efe9);box-shadow:var(--shadow);overflow:hidden}.hero-photo img{width:100%;height:100%;object-fit:cover}.hero-photo:after{content:"";position:absolute;inset:16px;border:1px solid rgba(255,255,255,.7);border-radius:205px 205px 20px 20px;pointer-events:none}
+    section{padding:88px 0}.center{text-align:center}.narrow{max-width:750px;margin:auto}.section-title{margin:0 0 24px;font-family:"Cormorant Garamond",serif;font-size:clamp(34px,4vw,48px);font-weight:600;line-height:1.08}.intro{background:#fff}.intro-lines{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:30px auto}.intro-lines span{padding:9px 15px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:14px}.statement{margin:30px 0 0;padding:24px;border-radius:18px;background:var(--rose-soft);font-size:19px;font-weight:600}.product{background:var(--cream)}.product-box{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center;padding:48px 54px;border:1px solid var(--line);border-radius:30px;background:#fff;box-shadow:var(--shadow)}.product-mark{display:grid;place-items:center;aspect-ratio:1;border-radius:50%;background:var(--rose-soft);text-align:center}.product-mark strong{display:block;font-family:"Cormorant Garamond",serif;font-size:76px;line-height:.8;color:var(--rose-dark)}.product-mark span{display:block;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.product-copy p{margin:0 0 16px;color:var(--muted)}.product-copy p:last-child{margin:0}
+    .steps{background:#fff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.card{padding:30px 26px;border:1px solid var(--line);border-radius:22px;background:#fff}.num{display:grid;place-items:center;width:38px;height:38px;margin-bottom:20px;border-radius:50%;background:var(--rose-soft);color:var(--rose-dark);font-weight:700}.card h3{margin:0 0 10px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:14px}.nodiet{padding:76px 0;background:var(--rose-soft)}.nodiet-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.nodiet p{margin:0;color:#5d5654}.nodiet strong{display:block;margin-top:22px;color:var(--rose-dark);font-size:18px}.result{background:#fff}.result-copy{font-size:18px;color:#56504e}.already{margin:34px 0 0;font-family:"Cormorant Garamond",serif;font-size:clamp(38px,5vw,58px);font-weight:600;color:var(--rose-dark)}
+    .about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:64px;align-items:center}.about-photo{height:470px;border-radius:26px;background:linear-gradient(145deg,#f0ded9,#f9eef1);overflow:hidden}.about-photo img{width:100%;height:100%;object-fit:cover}.about-copy .quote{margin:0 0 22px;font-family:"Cormorant Garamond",serif;font-size:31px;font-weight:600;line-height:1.18}.about-copy p{margin:0 0 17px;color:var(--muted)}.about-copy .name{color:var(--ink);font-weight:700}
+    .offer{padding:92px 0;background:#fff}.offer-box{position:relative;overflow:hidden;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;padding:58px 62px;border-radius:30px;background:var(--rose-soft)}.offer-box:after{content:"";position:absolute;right:-80px;top:-120px;width:320px;height:320px;border:1px solid rgba(185,103,123,.22);border-radius:50%}.offer h2{margin-bottom:14px}.offer-copy p{margin:0;color:#665c5b}.price-card{position:relative;z-index:1;padding:34px;border-radius:22px;background:#fff;text-align:center;box-shadow:var(--shadow)}.price-label{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.price{margin:8px 0 22px;font-family:"Cormorant Garamond",serif;font-size:54px;font-weight:600;line-height:1}.price small{font-family:Manrope,sans-serif;font-size:13px}.price-card .btn{width:100%}.micro{margin:14px 0 0!important;color:var(--muted)!important;font-size:12px}footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px;text-align:center}
+    @media(max-width:760px){.wrap{width:min(100% - 30px,600px)}header{padding:18px 0}.hero{min-height:auto;background:linear-gradient(180deg,#fff 0%,#fff 64%,var(--rose-soft) 64%,var(--cream) 100%)}.hero-grid{grid-template-columns:1fr;gap:40px;padding:100px 0 42px}.hero h1{font-size:51px}.lead{font-size:16px}.hero-photo{height:385px;max-width:390px;width:100%;margin:auto}.hero .btn{width:100%}section{padding:66px 0}.section-title{font-size:36px}.statement{font-size:16px}.product-box{grid-template-columns:1fr;padding:30px 24px;gap:30px}.product-mark{width:190px;margin:auto}.product-mark strong{font-size:64px}.cards{grid-template-columns:1fr}.card{display:grid;grid-template-columns:46px 1fr;column-gap:12px}.card .num{grid-row:1/3;margin:0}.card h3,.card p{grid-column:2}.nodiet-grid,.about-grid,.offer-box{grid-template-columns:1fr;gap:32px}.nodiet{padding:60px 0}.about-photo{height:390px}.about-copy .quote{font-size:28px}.offer{padding:64px 0}.offer-box{padding:36px 22px;border-radius:24px}.price{font-size:48px}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><div class="brand">Julia</div></div></header>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">7 días conmigo</p>
+          <h1 class="serif">Empezá a <span>cuidarte</span></h1>
+          <p class="lead">Una semana para empezar a sentirte mejor y verte mejor, con un paso simple por día y mi acompañamiento.</p>
+          <a class="btn" href="#sumarme">QUIERO EMPEZAR</a>
+        </div>
+        <div class="hero-photo"><img src="hero.JPG" alt="Julia" onerror="this.style.display='none'"></div>
+      </div>
+    </section>
+
+    <section class="intro center">
+      <div class="wrap narrow">
+        <p class="eyebrow">Quizás hace tiempo que querés...</p>
+        <h2 class="section-title">Cuidarte, sentirte mejor y verte mejor.</h2>
+        <div class="intro-lines"><span>Comer mejor</span><span>Moverte más</span><span>Tener más energía</span><span>Hacer algo por vos</span></div>
+        <p>Pero cuando pensás en todo lo que tendrías que cambiar, parece demasiado.</p>
+        <p class="statement">No hace falta hacer todo de una vez.</p>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="wrap product-box">
+        <div class="product-mark"><div><strong>7</strong><span>días juntas</span></div></div>
+        <div class="product-copy">
+          <p class="eyebrow">7 días conmigo</p>
+          <h2 class="section-title">Una semana para empezar.</h2>
+          <p>Cada día vas a recibir una propuesta pequeña y concreta para aplicar en tu vida real.</p>
+          <p><strong>Sin intentar hacerlo todo perfecto.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps center">
+      <div class="wrap">
+        <p class="eyebrow">Así funciona</p>
+        <h2 class="section-title">Simple y posible.</h2>
+        <div class="cards">
+          <article class="card"><div class="num">1</div><h3>Recibís</h3><p>Una explicación corta y una acción simple para ese día.</p></article>
+          <article class="card"><div class="num">2</div><h3>Lo aplicás</h3><p>Lo llevás a tu vida, con tus horarios y el tiempo que realmente tenés.</p></article>
+          <article class="card"><div class="num">3</div><h3>Yo te acompaño</h3><p>Me contás cómo te fue, me mostrás lo que hacés y recibís mi feedback.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="nodiet">
+      <div class="wrap nodiet-grid">
+        <h2 class="section-title">Acá no vamos a empezar otra dieta.</h2>
+        <div><p>No necesitás eliminar el pan, contar cada caloría, preparar un menú diferente ni entrenar una hora por día.</p><strong>Vamos a trabajar con tu vida tal como es hoy.</strong></div>
+      </div>
+    </section>
+
+    <section class="result center">
+      <div class="wrap narrow">
+        <p class="eyebrow">Después de la semana</p>
+        <p class="result-copy">Vas a entender mejor cómo armar tus comidas, vas a volver a mover tu cuerpo y vas a descubrir qué pequeños cambios funcionan para vos.</p>
+        <p class="already">Y, sobre todo, vas a poder decir: “Ya empecé”.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap about-grid">
+        <div class="about-photo"><img src="julia.JPG" alt="Julia, nutricionista y entrenadora" onerror="this.style.display='none'"></div>
+        <div class="about-copy">
+          <p class="eyebrow">Acompañamiento real</p>
+          <p class="quote">Una cosa es saber y otra muy distinta es aplicarlo.</p>
+          <p>Información sobre alimentación y entrenamiento hay por todos lados. Durante estos 7 días podés mostrarme lo que hacés y recibir una devolución pensada para vos.</p>
+          <p class="name">Soy Julia, nutricionista y entrenadora.</p>
+          <p>Trabajo con mujeres que quieren sentirse mejor y verse mejor, pero no quieren vivir a dieta ni pasar horas entrenando.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer" id="sumarme">
+      <div class="wrap offer-box">
+        <div class="offer-copy">
+          <p class="eyebrow">7 días conmigo</p>
+          <h2 class="section-title">Empezá a cuidarte con pasos simples.</h2>
+          <p>Una semana con mi acompañamiento para llevarlo a tu vida real.</p>
+        </div>
+        <div class="price-card">
+          <div class="price-label">Tu semana conmigo</div>
+          <div class="price">$15.000 <small>ARS</small></div>
+          <a class="btn" href="https://wa.me/5491133583757?text=Hola%20Julia!%20Quiero%20sumarme%20a%207%20d%C3%ADas%20conmigo%20%F0%9F%98%8A" target="_blank" rel="noopener" aria-label="Escribirle a Julia por WhatsApp para sumarme">QUIERO SUMARME</a>
+          <p class="micro">Al tocar el botón vas a escribirle directamente a Julia por WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">© Julia · Nutricionista y entrenadora</div></footer>
+</body>
+</html>
